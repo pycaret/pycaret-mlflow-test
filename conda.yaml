@@ -1,0 +1,8 @@
+name: pycaret-mlflow-test
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - mlflow
+    - pycaret-nightly
