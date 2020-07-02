@@ -2,6 +2,10 @@
 import sys
 exp_name = sys.argv[0]
 
+#setting experiment name
+import mlflow
+mlflow.set_experiment(exp_name)
+
 #loading dataset
 from pycaret.datasets import get_data
 data = get_data('juice')
