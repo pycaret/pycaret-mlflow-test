@@ -4,7 +4,7 @@ data = get_data('juice')
 
 #init setup
 from pycaret.classification import setup, create_model, finalize_model
-clf1 = setup(data, target = 'Purchase', logging=True, session_id=123, experiment_name='banana1', silent=True, html=False)
+clf1 = setup(data, target = 'Purchase', logging=True, session_id=123, silent=True, html=False)
 
 #training rf
 rf = create_model('rf')
