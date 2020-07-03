@@ -5,5 +5,5 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      exp_log
+      exp_log: string
     command: "python train.py {exp_log}"
