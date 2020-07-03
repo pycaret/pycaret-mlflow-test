@@ -4,6 +4,4 @@ conda_env: conda.yaml
 
 entry_points:
   main:
-    parameters:
-      exp_name: string
-    command: "python train.py {exp_name}"
+    command: "python train.py"
